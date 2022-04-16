@@ -85,4 +85,8 @@ body {
 		padding:2%;
 	}
 }
+.badge-primary {
+  background-color: rgba(156,1,255,1);
+}
+
 
