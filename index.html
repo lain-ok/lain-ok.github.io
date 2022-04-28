@@ -1,189 +1,419 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <meta name="author" content="">
-    <meta name="keywords" content="HTML, css, JavaScript">
-    <meta name="description" content="">
+    <meta name="author" content="" />
+    <meta name="keywords" content="HTML, css, JavaScript" />
+    <meta name="description" content="" />
     <title>Wills Portfolio</title>
 
-    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
+    <link rel="stylesheet" href="css/styles.css" />
     <!-- This is a comment, scripts to load are included in the header -->
 
     <!--Bootstrap-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
 
-    <link rel="stylesheet" href="css/navbar.css">
-    <link rel="stylesheet" href="css/scroll_arrow.css">
-</head>
-<body>
-  <nav class="nav">
-    <div class="container">
+    <script
+      src="https://kit.fontawesome.com/c50af1edba.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="stylesheet" href="css/navbar.css" />
+    <link rel="stylesheet" href="css/scroll_arrow.css" />
+  </head>
+  <body>
+    <nav class="nav">
+      <div class="container">
         <div class="logo">
-            <a href="#">Will Kopil</a>
+          <a href="#">Will Kopil</a>
         </div>
         <div id="mainListDiv" class="main_list">
-            <ul class="navlinks">
-                <li><a href="#">About</a></li>
-                <li><a href="#">Projects</a></li>
-                <li><a href="#">Skills</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
+          <ul class="navlinks">
+            <li><a href="#bio">Bio</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
         </div>
         <span class="navTrigger">
-            <i></i>
-            <i></i>
-            <i></i>
+          <i></i>
+          <i></i>
+          <i></i>
         </span>
-    </div>
-</nav>
+      </div>
+    </nav>
 
-<!--Hero section-->
-<section class="home"></section>
+    <!--Hero section-->
+    <section class="home"></section>
 
+    <section class="main">
+      <a class="arrow-wrap" href="#content">
+        <span class="arrow"></span>
+        <!--<span class="hint">scroll</span>-->
+      </a>
 
-<section class="main">
-<a class="arrow-wrap" href="#content">
-<span class="arrow"></span>
-<!--<span class="hint">scroll</span>-->
-</a>
-  
-  <div class="content" id="content">
-
-    <h2 class="myH2 c-article__title">Biography</h2>
-    <div class="article">
-        <p class="myP">In the spirit of my craft, I am an artist who uses my creativity to write code, compose music, and create art. I have managed projects and worked with a team to bring our ideas to life.  I am truly passionate about community and equity. I beleive all things that are made real start in the mind. I am dedicated to continue learning through my whole life so I can make the stuff dreams are made of. Life will never cease to teach you something new : 0</p>
-    </div>
-
-    <h2 class="myH2 c-article__title">Interests</h2>
-    <div class="article">
-        <p class="myP">
-            <span class="badge badge-primary" style="font-size:1.4em; margin:0.5em;">Artificial Intelligence</span>
-            <span class="badge badge-primary" style="font-size:1.4em; margin:0.5em;">3D Modeling</span>
-            <span class="badge badge-primary" style="font-size:1.4em; margin:0.5em;">Music</span>
-            <span class="badge badge-primary" style="font-size:1.4em; margin:0.5em;">Art</span>
-            <span class="badge badge-primary" style="font-size:1.4em; margin:0.5em;">Virtual Reality</span>
-            <span class="badge badge-primary" style="font-size:1.4em; margin:0.5em;">Coding</span>
-            <span class="badge badge-primary" style="font-size:1.4em; margin:0.5em;">Skateboarding</span>
-            <span class="badge badge-primary" style="font-size:1.4em; margin:0.5em;">Biking</span>
-            <span class="badge badge-primary" style="font-size:1.4em; margin:0.5em;">Entrepreneurship</span>
-            <span class="badge badge-primary" style="font-size:1.4em; margin:0.5em;">Fashion</span>
-            <span class="badge badge-primary" style="font-size:1.4em; margin:0.5em;">Sewing</span>
-        </p>
-    </div>
-
-    <h2 class="myH2 c-article__title">Skills</h2>
-    <div class="article">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm">
-                    <p class="myP" style="text-align:center;"><strong style="font-family: 'FreeMono', monospace;font-size:1.6em;">Technical Skills</strong></p>
-                    <p class="myP" style="text-align:left;">
-                        <span class="badge badge-primary" style="font-size:1.4em; margin:0.5em;">HTML</span>
-                        <span class="badge badge-primary" style="font-size:1.4em; margin:0.5em;">CSS</span>
-                        <span class="badge badge-primary" style="font-size:1.4em; margin:0.5em;">PHP</span>
-                        <span class="badge badge-primary" style="font-size:1.4em; margin:0.5em;">JavaScript</span>
-                        <span class="badge badge-primary" style="font-size:1.4em; margin:0.5em;">Linux</span>
-                        <span class="badge badge-primary" style="font-size:1.4em; margin:0.5em;">Shopify</span>
-                        <span class="badge badge-primary" style="font-size:1.4em; margin:0.5em;">GitHub</span>
-                        <span class="badge badge-primary" style="font-size:1.4em; margin:0.5em;">Docker</span>
-                        <span class="badge badge-primary" style="font-size:1.4em; margin:0.5em;">Python</span>
-                        <span class="badge badge-primary" style="font-size:1.4em; margin:0.5em;">Blender</span>
-                        <span class="badge badge-primary" style="font-size:1.4em; margin:0.5em;">Slack</span>
-                    </p>
-                </div>
-                <div class="col-sm">
-                    <p class="myP" style="text-align:center;"><strong style="font-family: 'FreeMono', monospace;font-size:1.6em;">Soft Skills</strong></p>
-                    <p class="myP" style="text-align:left;">
-                        <span class="badge badge-primary" style="font-size:1.4em; margin:0.5em;">Patience</span>
-                        <span class="badge badge-primary" style="font-size:1.4em; margin:0.5em;">Punctual</span>
-                        <span class="badge badge-primary" style="font-size:1.4em; margin:0.5em;">Creative</span>
-                        <span class="badge badge-primary" style="font-size:1.4em; margin:0.5em;">Active Listening</span>
-                        <span class="badge badge-primary" style="font-size:1.4em; margin:0.5em;">Quick learner</span>
-                        <span class="badge badge-primary" style="font-size:1.4em; margin:0.5em;">Time management</span>
-                        <span class="badge badge-primary" style="font-size:1.4em; margin:0.5em;">Open minded</span>
-                        <span class="badge badge-primary" style="font-size:1.4em; margin:0.5em;">Workflow optimization</span>                    </p>
-                </div>
-            </div>
+      <div class="content" id="content">
+        <h2 class="myH2 c-article__title" id="bio">Biography</h2>
+        <div class="article">
+          <p class="myP">
+            In the spirit of my craft, I am an artist who uses my creativity to
+            write code, compose music, and create art. I have managed projects
+            and worked with a team to bring our ideas to life. I am truly
+            passionate about community and equity. I beleive all things that are
+            made real start in the mind. I am dedicated to continue learning
+            through my whole life so I can make the stuff dreams are made of.
+            Life will never cease to teach you something new : 0
+          </p>
         </div>
-    </div>
 
-    <h2 class="myH2 c-article__title">Projects</h2>
-    <div class="article">
-        <p class="myP"><strong style="font-family: 'FreeMono', monospace;font-size:1.6em;">Minecraft CPU</strong></p>
-        <details>
-            <summary style="color:white;font-size: 2em;"><u>Project Info</u></summary>
-            <p class="myP">In my highschool computer class we learned a bit about logic gates, however I was interested in how you take all the peices and put them together to form a computer. I read a book about the basics and I implemented some of the designs in a videogame called minecraft.</p>
-            <img style="width:100%" src="./images/minecraft1.jpg"/>
-            <img style="width:100%" src="./images/minecraft2.jpg"/>
-            <img style="width:100%" src="./images/minecraft3.jpg"/>
+        <h2 class="myH2 c-article__title">Interests</h2>
+        <div class="article">
+          <p class="myP">
+            <span
+              class="badge badge-primary"
+              style="font-size: 1.4em; margin: 0.5em"
+              >Artificial Intelligence</span
+            >
+            <span
+              class="badge badge-primary"
+              style="font-size: 1.4em; margin: 0.5em"
+              >3D Modeling</span
+            >
+            <span
+              class="badge badge-primary"
+              style="font-size: 1.4em; margin: 0.5em"
+              >Music</span
+            >
+            <span
+              class="badge badge-primary"
+              style="font-size: 1.4em; margin: 0.5em"
+              >Art</span
+            >
+            <span
+              class="badge badge-primary"
+              style="font-size: 1.4em; margin: 0.5em"
+              >Virtual Reality</span
+            >
+            <span
+              class="badge badge-primary"
+              style="font-size: 1.4em; margin: 0.5em"
+              >Coding</span
+            >
+            <span
+              class="badge badge-primary"
+              style="font-size: 1.4em; margin: 0.5em"
+              >Skateboarding</span
+            >
+            <span
+              class="badge badge-primary"
+              style="font-size: 1.4em; margin: 0.5em"
+              >Biking</span
+            >
+            <span
+              class="badge badge-primary"
+              style="font-size: 1.4em; margin: 0.5em"
+              >Entrepreneurship</span
+            >
+            <span
+              class="badge badge-primary"
+              style="font-size: 1.4em; margin: 0.5em"
+              >Fashion</span
+            >
+            <span
+              class="badge badge-primary"
+              style="font-size: 1.4em; margin: 0.5em"
+              >Sewing</span
+            >
+          </p>
+        </div>
 
-        </details>
+        <h2 class="myH2 c-article__title">Skills</h2>
+        <div class="article">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm">
+                <p class="myP" style="text-align: center">
+                  <strong
+                    style="font-family: 'FreeMono', monospace; font-size: 1.6em"
+                    >Technical Skills</strong
+                  >
+                </p>
+                <p class="myP" style="text-align: left">
+                  <span
+                    class="badge badge-primary"
+                    style="font-size: 1.4em; margin: 0.5em"
+                    >HTML</span
+                  >
+                  <span
+                    class="badge badge-primary"
+                    style="font-size: 1.4em; margin: 0.5em"
+                    >CSS</span
+                  >
+                  <span
+                    class="badge badge-primary"
+                    style="font-size: 1.4em; margin: 0.5em"
+                    >PHP</span
+                  >
+                  <span
+                    class="badge badge-primary"
+                    style="font-size: 1.4em; margin: 0.5em"
+                    >JavaScript</span
+                  >
+                  <span
+                    class="badge badge-primary"
+                    style="font-size: 1.4em; margin: 0.5em"
+                    >Linux</span
+                  >
+                  <span
+                    class="badge badge-primary"
+                    style="font-size: 1.4em; margin: 0.5em"
+                    >Shopify</span
+                  >
+                  <span
+                    class="badge badge-primary"
+                    style="font-size: 1.4em; margin: 0.5em"
+                    >GitHub</span
+                  >
+                  <span
+                    class="badge badge-primary"
+                    style="font-size: 1.4em; margin: 0.5em"
+                    >Docker</span
+                  >
+                  <span
+                    class="badge badge-primary"
+                    style="font-size: 1.4em; margin: 0.5em"
+                    >Python</span
+                  >
+                  <span
+                    class="badge badge-primary"
+                    style="font-size: 1.4em; margin: 0.5em"
+                    >Blender</span
+                  >
+                  <span
+                    class="badge badge-primary"
+                    style="font-size: 1.4em; margin: 0.5em"
+                    >Slack</span
+                  >
+                </p>
+              </div>
+              <div class="col-sm">
+                <p class="myP" style="text-align: center">
+                  <strong
+                    style="font-family: 'FreeMono', monospace; font-size: 1.6em"
+                    >Soft Skills</strong
+                  >
+                </p>
+                <p class="myP" style="text-align: left">
+                  <span
+                    class="badge badge-primary"
+                    style="font-size: 1.4em; margin: 0.5em"
+                    >Patience</span
+                  >
+                  <span
+                    class="badge badge-primary"
+                    style="font-size: 1.4em; margin: 0.5em"
+                    >Punctual</span
+                  >
+                  <span
+                    class="badge badge-primary"
+                    style="font-size: 1.4em; margin: 0.5em"
+                    >Creative</span
+                  >
+                  <span
+                    class="badge badge-primary"
+                    style="font-size: 1.4em; margin: 0.5em"
+                    >Active Listening</span
+                  >
+                  <span
+                    class="badge badge-primary"
+                    style="font-size: 1.4em; margin: 0.5em"
+                    >Quick learner</span
+                  >
+                  <span
+                    class="badge badge-primary"
+                    style="font-size: 1.4em; margin: 0.5em"
+                    >Time management</span
+                  >
+                  <span
+                    class="badge badge-primary"
+                    style="font-size: 1.4em; margin: 0.5em"
+                    >Open minded</span
+                  >
+                  <span
+                    class="badge badge-primary"
+                    style="font-size: 1.4em; margin: 0.5em"
+                    >Workflow optimization</span
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
 
-        <p class="myP"><strong style="font-family: 'FreeMono', monospace;font-size:1.6em;">Alchemists E-Coin</strong></p>
-        <details>
-            <summary style="color:white;font-size: 2em;"><u>Project Info</u></summary>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/aKrD8rG0cWg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <h2 class="myH2 c-article__title">Projects</h2>
+        <div class="article">
+          <p class="myP">
+            <strong style="font-family: 'FreeMono', monospace; font-size: 1.6em"
+              >Minecraft CPU</strong
+            >
+          </p>
+          <details>
+            <summary style="color: white; font-size: 2em">
+              <u>Project Info</u>
+            </summary>
+            <p class="myP">
+              In my highschool computer class we learned a bit about logic
+              gates, however I was interested in how you take all the peices and
+              put them together to form a computer. I read a book about the
+              basics and I implemented some of the designs in a videogame called
+              minecraft.
+            </p>
+            <img style="width: 100%" src="./images/minecraft1.jpg" />
+            <img style="width: 100%" src="./images/minecraft2.jpg" />
+            <img style="width: 100%" src="./images/minecraft3.jpg" />
+          </details>
 
-        </details>
+          <p class="myP">
+            <strong style="font-family: 'FreeMono', monospace; font-size: 1.6em"
+              >Alchemists E-Coin</strong
+            >
+          </p>
+          <details>
+            <summary style="color: white; font-size: 2em">
+              <u>Project Info</u>
+            </summary>
+            <p class="myP">
+              Alchemists E-Coin is a conecpt for a cryptocurrency I created. I
+              produced the music for the video in Fl studio as well as the
+              textures for the coin using artificial intelligence. I brought it
+              all together in the animation software Blender.
+            </p>
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/aKrD8rG0cWg"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </details>
 
-        <p class="myP"><strong style="font-family: 'FreeMono', monospace;font-size:1.6em;">O-Towndayz</strong></p>
-        <details>
-            <summary style="color:white;font-size: 2em;"><u>Project Info</u></summary>
+          <p class="myP">
+            <strong style="font-family: 'FreeMono', monospace; font-size: 1.6em"
+              >O-Towndayz</strong
+            >
+          </p>
+          <details>
+            <summary style="color: white; font-size: 2em">
+              <u>Project Info</u>
+            </summary>
+            <p class="myP">
+              I created the site <a href="otowndayz.com">O-Towndayz</a> to bring
+              internet culture and fashion into my local community, Ottawa
+              Ontario. I used shopify as my backend and frontend and I keep a
+              running
+              <a
+                href="https://otowndayz.com/blogs/blog/your-guide-to-vaporwave-in-canada"
+                >blog</a
+              >
+              about art and music in the community.
+            </p>
+            <div class="flex-container">
+              <div class="flex-item">
+                <img src="images/Otowndayz.jpg" style="width: 100%" />
+              </div>
+              <div class="flex-item">
+                <img src="images/my_site.png" style="width: 100%" />
+              </div>
+            </div>
+          </details>
+        </div>
 
-        </details>
-    </div>
+        <h2 class="myH2 c-article__title">Certificates</h2>
+        <div class="article">
+          <p class="myP">
+            <strong style="font-family: 'FreeMono', monospace; font-size: 1.6em"
+              >Causeway certificate of completion</strong
+            >
+          </p>
+          <p class="myP">
+            Causeway is a soft skills training and career development program in
+            which I learned about communication skills and took my first steps
+            back into employment
+          </p>
+          <img style="width: 50%" src="images/causeway.jpg" />
+          <br /><br /><br />
+          <p class="myP">
+            <strong style="font-family: 'FreeMono', monospace; font-size: 1.6em"
+              >Code youth certificate of completion</strong
+            >
+          </p>
+          <p class="myP">
+            Participated in code youths 3 month program. Gained proficiency in
+            front end coding and languages including HTML, CSS, JavaScript,
+            Bootstrap and DOM. The program emphasized project based learning in
+            an Agile environment. Familiar with industry utilized tools such as
+            Jira, Confluence, Slack and GitHub. Attended a professional SCRUM
+            training course with Bourk Consulting and integrated these skills
+            when designing and developing projects.
+          </p>
+        </div>
 
-    <h2 class="myH2 c-article__title">Certificates</h2>
-    <div class="article">
-    </div>
+        <h2 class="myH2 c-article__title" id="contact">Contact</h2>
+        <div class="article">
+          <p class="myP">
+            If you have any questions for me or think we should work together
+            please connect to me on LinkedIn or shoot me an email!
+          </p>
+          <p class="myP">
+            <i class="fa-solid fa-envelope"></i> kopilwilliam@gmail.com
+          </p>
+          <p class="myP">
+            <i class="fa-brands fa-linkedin"></i>
+            <a href="https://www.linkedin.com/in/william-kopil/">Will Kopil</a>
+          </p>
+        </div>
+      </div>
+    </section>
 
+    <!--Bootstrap-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
 
-      <p class="myP" style="color:cyan">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
-      <p class="myP" style="color:cyan">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
-      <p class="myP" style="color:cyan">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
-      <p class="myP" style="color:cyan">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
-      <p class="myP" style="color:cyan">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
-      <p class="myP" style="color:cyan">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p> 
-      <p class="myP" style="color:cyan">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p> 
-      <p class="myP" style="color:cyan">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p> 
-      <p class="myP" style="color:cyan">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p> 
-      <p class="myP" style="color:cyan">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p> 
-      <p class="myP" style="color:cyan">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p> 
-      <p class="myP" style="color:cyan">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p> 
-      <p class="myP" style="color:cyan">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p> 
- </div>
-</section>
+    <!-- Jquery needed -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 
-<!--Bootstrap-->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-
-<!-- Jquery needed -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-
-<!-- Function used to shrink nav bar removing paddings and adding black background -->
-<script>
-  $(window).scroll(function() {
-      if ($(document).scrollTop() > 50) {
-          $('.nav').addClass('affix');
+    <!-- Function used to shrink nav bar removing paddings and adding black background -->
+    <script>
+      $(window).scroll(function () {
+        if ($(document).scrollTop() > 50) {
+          $(".nav").addClass("affix");
           console.log("OK");
-      } else {
-          $('.nav').removeClass('affix');
-      }
-  });
-</script>
+        } else {
+          $(".nav").removeClass("affix");
+        }
+      });
+    </script>
 
-<script src="js/navbar.js"></script>
-<script src="js/scroll_arrow.js"></script>
+    <script src="js/navbar.js"></script>
+    <script src="js/scroll_arrow.js"></script>
 
-
-<!--THREEjs-->
-<script src="js/three.js"></script>
-<script src="js/GLTFLoader.js"></script>
-<script src="js/FirstPersonControls.js"></script>
-<script src="js/app.js"></script>
-</body>
+    <!--THREEjs-->
+    <script src="js/three.js"></script>
+    <script src="js/GLTFLoader.js"></script>
+    <script src="js/FirstPersonControls.js"></script>
+    <script src="js/app.js"></script>
+  </body>
 </html>
