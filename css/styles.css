@@ -1,66 +1,107 @@
 * {
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-  }
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
 
 body {
 }
 
+/* unvisited link */
+a:link {
+  color: #00fff7;
+}
+
+/* visited link */
+a:visited {
+  color: #FF00FF;
+}
+
+/* mouse over link */
+a:hover {
+  color: #09b0aa;
+}
+
+/* selected link */
+a:active {
+  color: #b8fffd;
+}
+
 .home {
-    float:left;
-    padding:2em 4em;
-    width: 100%;
-    height:calc(100vh - 3em);
+  float: left;
+  padding: 2em 4em;
+  width: 100%;
+  height: calc(100vh - 3em);
 }
 
 .content {
-    font-size: 1em;
-    width:90%;
-    margin:auto;
-    padding:80px 0;
-  }
+  font-size: 1em;
+  width: 90%;
+  margin: auto;
+  padding: 80px 0;
+}
 
 .myH2 {
-	text-align:justify;
-	font-size: 5em;
-  z-index:1;
+  text-align: justify;
+  font-size: 5em;
+  z-index: 1;
 }
 
 // Keyframes
 /* Chrome, Safari, Opera */
 @-webkit-keyframes bg-color {
-  50% {background-position: right center;}
+  50% {
+    background-position: right center;
+  }
 }
 /* Standard syntax */
 @keyframes bg-color {
-  50% {background-position: right center;}
+  50% {
+    background-position: right center;
+  }
 }
 
 .c-article__title {
-  font-family: 'FreeMono', monospace;
-  background: -webkit-gradient(linear, left top, right top, from(rgba(156,1,255,1)), color-stop(50%, rgba(255,91,219,1)), to(rgba(156,1,255,1)));
-  background: -o-linear-gradient(left, rgba(156,1,255,1) 0%, rgba(255,91,219,1) 50%, rgba(156,1,255,1) 100%);
-  background: linear-gradient(90deg, rgba(156,1,255,1) 0%, rgba(255,91,219,1) 50%, rgba(156,1,255,1) 100%);
+  font-family: "FreeMono", monospace;
+  background: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(rgba(156, 1, 255, 1)),
+    color-stop(50%, rgba(255, 91, 219, 1)),
+    to(rgba(156, 1, 255, 1))
+  );
+  background: -o-linear-gradient(
+    left,
+    rgba(156, 1, 255, 1) 0%,
+    rgba(255, 91, 219, 1) 50%,
+    rgba(156, 1, 255, 1) 100%
+  );
+  background: linear-gradient(
+    90deg,
+    rgba(156, 1, 255, 1) 0%,
+    rgba(255, 91, 219, 1) 50%,
+    rgba(156, 1, 255, 1) 100%
+  );
   background-size: 1600px 200px;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   -webkit-animation-duration: 5s;
-          animation-duration: 5s;
+  animation-duration: 5s;
   -webkit-animation-name: bg-color;
-          animation-name: bg-color;
+  animation-name: bg-color;
   -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
   -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
 }
 
 .article {
-  background: rgba(0,0,0,0.5);
+  background: rgba(0, 0, 0, 0.5);
   border-radius: 25px;
   padding: 25px;
-  margin-top:20px;
-  margin-bottom:20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .hard-skills {
@@ -70,46 +111,46 @@ body {
 }
 
 .skills-header {
-  text-align:center;
-  font-size:3em;
-  color:white;
+  text-align: center;
+  font-size: 3em;
+  color: white;
 }
 
 .myP {
-	text-align: justify;
-	font-size: 20px;
-  color:white;
+  text-align: justify;
+  font-size: 20px;
+  color: white;
 }
-@media all and (max-width:700px){
-	.myP {
-		padding:2%;
-	}
+@media all and (max-width: 700px) {
+  .myP {
+    padding: 2%;
+  }
 }
 .badge-primary {
-  background-color: rgba(156,1,255,1);
+  background-color: rgba(156, 1, 255, 1);
 }
 
 .flex-container {
-  margin-top:30px;
+  margin-top: 30px;
   display: flex;
   padding: 1rem;
   justify-content: space-around;
 }
 
 .flex-item {
-  width:30%;
+  width: 30%;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   text-align: center;
 }
 
 @media (max-width: 600px) {
   .flex-container {
-      flex-direction: column;
-      align-items: center;
+    flex-direction: column;
+    align-items: center;
   }
 
   .flex-item {
-      width: 100%;
-      margin-top: 1rem;
+    width: 100%;
+    margin-top: 1rem;
   }
 }
