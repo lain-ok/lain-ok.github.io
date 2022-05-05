@@ -23,7 +23,6 @@ renderer.setSize( window.innerWidth, window.innerHeight );
 // Append Renderer to DOM
 let renderContainer = document.createElement('div');
 renderContainer.setAttribute('style','z-index: -1;position:fixed;top:0;left:0;');
-//document.body.appendChild( renderer.domElement );
 renderContainer.appendChild( renderer.domElement );
 document.body.appendChild( renderContainer );
 
@@ -148,35 +147,12 @@ moveCamera();
 var render = function () {
   requestAnimationFrame( render );
 
-  // Camera follow spline
-  /*
-  camPosIndex++;
-  if (camPosIndex > 10000) {
-    camPosIndex = 0;
-  }
-  
-  var camPos = spline.getPoint(camPosIndex / 10000);
-  var camRot = spline.getTangent(camPosIndex / 10000);
-
-  camera.position.x = camPos.x;
-  camera.position.y = camPos.y;
-  camera.position.z = camPos.z;
-  
-  camera.rotation.x = camRot.x;
-  camera.rotation.y = camRot.y;
-  camera.rotation.z = camRot.z;
-  
-  camera.lookAt(spline.getPoint((camPosIndex+1) / 10000));
-  */
-
   //This line allows camera control via keys and mouse
   //controls.update(clock.getDelta());
 
   // Render the scene
   renderer.render(scene, camera);
 };
-
-render();
 
 window.addEventListener( 'resize', onWindowResize, false );
 
