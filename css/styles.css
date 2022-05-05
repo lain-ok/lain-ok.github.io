@@ -14,7 +14,7 @@ a:link {
 
 /* visited link */
 a:visited {
-  color: #FF00FF;
+  color: #ff00ff;
 }
 
 /* mouse over link */
@@ -121,13 +121,14 @@ a:active {
   font-size: 20px;
   color: white;
 }
-@media all and (max-width: 700px) {
-  .myP {
-    padding: 2%;
-  }
-}
+
 .badge-primary {
   background-color: rgba(156, 1, 255, 1);
+}
+
+.myBadgeStyle {
+  font-size: 1.4em;
+  margin: 0.5em;
 }
 
 .flex-container {
@@ -143,7 +144,11 @@ a:active {
   text-align: center;
 }
 
-@media (max-width: 600px) {
+@media all and (max-width: 700px) {
+  .myP {
+    padding: 2%;
+  }
+
   .flex-container {
     flex-direction: column;
     align-items: center;
@@ -152,5 +157,10 @@ a:active {
   .flex-item {
     width: 100%;
     margin-top: 1rem;
+  }
+
+  .myBadgeStyle {
+    font-size: 0.8em;
+    margin: 0.25em;
   }
 }
