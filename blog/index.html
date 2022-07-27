@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta name="author" content="William Kopil" />
+    <meta
+      name="keywords"
+      content="HTML, CSS, PHP, JavaScript, Web developer, artist, ThreeJs, blender, coder, programmer"
+    />
+    <meta
+      name="description"
+      content="In the spirit of my craft, I am an artist who uses my creativity to write code, compose music, and create art."
+    />
+
+    <meta property="og:title" content="Will Kopil" />
+    <meta
+      property="og:description"
+      content="In the spirit of my craft, I am an artist who uses my creativity to write code, compose music, and create art."
+    />
+    <meta property="og:image" content="images/OG.png" />
+
+    <title>Wills Portfolio</title>
+
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
+    <!-- This is a comment, scripts to load are included in the header -->
+
+    <!--Bootstrap-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+
+    <script
+      src="https://kit.fontawesome.com/c50af1edba.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="stylesheet" href="/css/navbar.css" />
+    <link rel="stylesheet" href="/css/scroll_arrow.css" />
+    <link rel="stylesheet" href="/css/styles.css" />
+
+    <link rel="stylesheet" href="/css/blog_styles.css" />
+  </head>
+  <body>
+    <nav class="nav">
+      <div class="container">
+        <div class="logo">
+          <a href="/#">Will Kopil</a>
+        </div>
+        <div id="mainListDiv" class="main_list">
+          <ul class="navlinks">
+            <li><a href="/#bio">Bio</a></li>
+            <li><a href="/#projects">Projects</a></li>
+            <li><a href="/#skills">Skills</a></li>
+            <li><a href="/#contact">Contact</a></li>
+            <li><a href="/blog/">Blog</a></li>
+          </ul>
+        </div>
+        <span class="navTrigger">
+          <i></i>
+          <i></i>
+          <i></i>
+        </span>
+      </div>
+    </nav>
+    <section class="home">
+      <img
+        src="/images/blog_hero_section.png"
+        style="
+          position: relative;
+          top: 0;
+          left: 0;
+          width: 100%;
+          max-height: calc(100vh - 3em);
+        "
+      />
+    </section>
+
+    <section class="main">
+      <a class="arrow-wrap" href="#content">
+        <span class="arrow"></span>
+        <!--<span class="hint">scroll</span>-->
+      </a>
+
+      <div class="content" id="content">
+        <h2 class="myH2 c-article__title">Blog</h2>
+        <div class="article">
+          <p class="myP">
+            <strong style="font-family: 'FreeMono', monospace; font-size: 1.6em"
+              ><a href="/blog/01-02-2022"
+                >01-02-2022 Your Definitive Guide To Vaporwave in Canada</a
+              ></strong
+            >
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!--Bootstrap-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Jquery needed -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+    <!-- Function used to shrink nav bar removing paddings and adding black background -->
+    <script>
+      $(window).scroll(function () {
+        if ($(document).scrollTop() > 50) {
+          $(".nav").addClass("affix");
+          console.log("OK");
+        } else {
+          $(".nav").removeClass("affix");
+        }
+      });
+    </script>
+
+    <script src="/js/navbar.js"></script>
+    <script src="js/scroll_arrow.js"></script>
+  </body>
+</html>
